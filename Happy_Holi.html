@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi</title>
+    <style>
+         body{
+            text-align: center;
+        }
+       
+        button{
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 18px;
+            font-size: 110px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-image: url(img/Screenshot\ 2022-03-18\ 095131.jpg);
+        }
+    </style>
+</head>
+<body>
+    <button> "Click Here" </button>
+    <script>
+        let namasteBtn= document.querySelector('button');
+        namasteBtn.addEventListener('click', inputMsg);
+
+        function inputMsg(){
+            let name = prompt('Type Your Name');
+            namasteBtn.textContent = 'Happy Holi '+ name + ' and your family '    }
+    </script>
+</body>
+</html>
